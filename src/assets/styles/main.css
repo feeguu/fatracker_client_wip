@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HIGH CONTRAST */
+
+.high-contrast * {
+	@apply bg-contrast-primary text-contrast-secondary opacity-100 ring-contrast-secondary fill-contrast-secondary;
+}
+
+.high-contrast button {
+	@apply bg-contrast-link !text-contrast-primary;
+}
